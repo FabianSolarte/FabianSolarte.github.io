@@ -5,6 +5,8 @@ import path from 'path';
 
 // https://astro.build/config
 export default defineConfig({
+  // 👇 AÑADE 'site' AQUÍ
+  site: 'https://FabianSolarte.github.io',
   output: "server",
   server: {
     port: process.env.PORT ? parseInt(process.env.PORT) : 4321,
@@ -15,7 +17,6 @@ export default defineConfig({
     mode: 'standalone'
   }),
   integrations: [apostrophe({
-  site: 'https://FabianSolarte.github.io'
     aposHost: 'http://localhost:3000',
     widgetsMapping: './src/widgets',
     templatesMapping: './src/templates',
