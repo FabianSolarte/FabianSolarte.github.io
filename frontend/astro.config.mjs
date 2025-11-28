@@ -15,6 +15,7 @@ export default defineConfig({
     mode: 'standalone'
   }),
   integrations: [apostrophe({
+  site: 'https://FabianSolarte.github.io'
     aposHost: 'http://localhost:3000',
     widgetsMapping: './src/widgets',
     templatesMapping: './src/templates',
@@ -51,5 +52,4 @@ export default defineConfig({
       }
     }
   }
-  site: 'https://FabianSolarte.github.io'
 });
