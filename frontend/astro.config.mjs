@@ -3,6 +3,7 @@ import node from '@astrojs/node';
 import apostrophe from '@apostrophecms/apostrophe-astro';
 import path from 'path';
 
+site: 'https://FabianSolarte.github.io'
 // https://astro.build/config
 export default defineConfig({
   output: "server",
